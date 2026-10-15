@@ -1,0 +1,9 @@
+# Copy to local.properties (git-ignored). Public client values only.
+sdk.dir=/path/to/Android/Sdk
+SUPABASE_URL=https://YOUR-PROJECT-REF.supabase.co
+SUPABASE_ANON_KEY=YOUR_ANON_PUBLIC_KEY
+# Optional, only for a signed release APK:
+# RELEASE_STORE_FILE=/path/to/hisab-release.jks
+# RELEASE_STORE_PASSWORD=
+# RELEASE_KEY_ALIAS=
+# RELEASE_KEY_PASSWORD=

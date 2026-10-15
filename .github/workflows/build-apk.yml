@@ -20,6 +20,8 @@ jobs:
           echo "SUPABASE_ANON_KEY=${{ secrets.SUPABASE_ANON_KEY }}" >> local.properties
       - name: Build debug APK
         run: gradle :app:assembleDebug --stacktrace
+        env:
+          GRADLE_OPTS: -Xmx3g -XX:MaxMetaspaceSize=1g
       - uses: actions/upload-artifact@v4
         with:
           name: hisab-debug-apk
